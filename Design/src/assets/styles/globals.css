@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+@font-face {
+  font-family: poppins;
+  src: url("../fonts/Poppins/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: poppins-bold;
+  src: url("../fonts/Poppins/Poppins-ExtraBoldItalic.ttf");
+}
+@font-face {
+  font-family: poppins-bold;
+  src: url("../fonts/Rajdhani-Bold.ttf");
+}
+.poppins {
+  font-family: poppins;
+}
+.poppins-bold {
+  font-family: poppins-bold;
+}
+.bg-img {
+  background-image: url("../../../public/mustang.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sidebar.open {
+  width: 200px;
+}
+
+.sidebar.closed {
+  width: 70px;
+}
+
+@media (max-width: 490px) {
+  .rentResponsive {
+    display: none;
+  }
+  .serachResponsive {
+    display: grid;
+    justify-content: center;
+  }
+}
+@media (max-width: 420px) {
+  .editDeleteResponsive {
+    display: grid;
+  }
+}
+@media (max-width: 370px) {
+  .imageResponsive {
+    width: 60px;
+    height: 60px;
+    transition: all 0.4s ease;
+  }
+}
+@media (max-width: 350px) {
+  .text__responsive {
+    font-size: 15px;
+  }
+  .edit__responsive {
+    padding: 3px;
+    transition: all 0.4s ease-in-out;
+  }
+}
+
+/* @media (prefers-color-scheme: dark) {
+  body {
+    color: white;
+  }
+  .sidebar__dark {
+    background-color: #36454f;
+  }
+  .active__menu__sidebar {
+    color: black !important;
+  }
+  .active__menu__sidebar__hover:hover {
+    color: black !important;
+  }
+  .dark__addcar {
+    background-color: #333d43;
+  }
+} */
